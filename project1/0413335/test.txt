@@ -1,0 +1,37 @@
+// print hello world
+begin
+  var a : integer;
+  var b : real;
+  print "hello world";
+  a := 1+1;
+  b := 1.23;
+  if a > 01 then
+    b := b*1.23e-1;
+  end if
+  print ""; // empty string
+  c := 0.0045;
+  /* test111
+     test222 */
+  d := -1334;
+  e := 012E+4; // scientific
+
+  //f := 08889;
+  print "GGGGG"ABBC"";
+  //print "hello"world";
+  //a := 09"9"9"9"9"9@@;
+  "yooooooooooooooo"""oooooooooooooooooooooooooo
+  ooiamemilyy!!!!!!!!!!";
+  000
+  //.
+  //12.
+  //01.234
+  //.02
+  //12.E4
+  //.02e-3
+
+  //1111111111111
+  //&S-
+  //2222222222222
+  //&S+
+  //333333333333
+end
