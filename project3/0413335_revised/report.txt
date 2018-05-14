@@ -1,0 +1,14 @@
+*change of scanner, parser:
+	scanner 多 yylvalue, 還有Opt_D的實作
+	parser 多用union, 要把lex輸出的型態跟parser要用的型態做對應
+		   再加一堆action
+*platform:
+	linux1.cs.nctu.edu.tw
+*ability:
+		用vector<symbolTable>實作要印出的symbolTable
+		在對應的地方(例如idList trace到底的ID), 要push entry到目前最新的table,
+		然後因為有些值要等到後面才會填到, 所以我到後面才檢查name有沒有重複,
+		因為已經push進去了, 如果有重複再pop出來並印出有error就好。	
+		每到一個scope的結束就印出目前最新的table
+*how to run:
+	因為makefile已經打好了, 所以只要打make就可以產生parser了。
