@@ -1,0 +1,16 @@
+*The change I made to my scanner/ parser:
+	parser的地方照著spec上面打出assembly
+*The abilities of my parser:
+	./parser test.p -> 產生出test.j
+	java -jar jasmin.jar test.j -> 產生出test.class
+	然後再java test, 就可以跑出結果(test.p要的結果)了
+	// ---
+	根據spec上的要求應該都有打
+	做function parameter的type coercion覺得做的蠻麻煩的
+	因為invokestatic test1/add(II)I這行之前已經會load好所有的東西到stack
+	所以後面要做coercion的地方會要pop(istore, fstore...)掉上面幾個
+	做i2f之後, 再把剛剛pop掉的地方load回來
+*The platform to run my parser:
+    linux1.cs.nctu.edu.tw
+*How to run my parser:
+    跑makefile即可產生出parser
